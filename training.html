@@ -135,14 +135,36 @@
            </tr> 
             </table>
         </tbody>
+        <style>
+                table{
+                    border: 1px solid black;
+                }
+                td{
+                    border: 1px solid black;
+                }
+            </style>
+            <table>
+                <tr>
+                    <td colspan="3">up</td>
+                    <td colspan="2", rowspan="2">right</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"rowspan="2">left</td>
+                    <td colspan="2">center</td>
+                </tr>
+                <tr>
+                  <td colspan="3">down</td>
+                </tr>
+            
+            </table>
            
       </table>
 
       <!-- div, span 분할 -->
       <!-- 의미없이 쓰기 좋은 태그들 -->
-      <div>블라블라 내용~</div>
+      <div>내용</div>
       <!-- 인라인형 -->
-      <span> 애도 블라블라 내용~</span>
+      <span>내용</span>
 
     </body>
 </html>
