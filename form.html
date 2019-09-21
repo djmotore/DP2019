@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 
 <html>
-    
     <head>
-        <title><strong>[회원가입]</strong></title>
+      <title>[회원가입]</title>
+      <meta charset="utf-8"  />
+      <a href="index.html" target= "_blank">인덱스</a>
     </head>
-    <body>
-        
-        <h1>[오세안무역 사내 메신져 회원가입]</h1>
-        <p>귀하의 오세안 무역 입사를 축하합니다</p>
+    
+    
+     <body>
+            
+            <div style = "text-align : center;">
+              <h1>[오세안무역 사내 메신져 회원가입]</h1>
+            </div>
+        <br />
+        <br />
+        <br />
+        <br />
         <form>
-           <h2><strong>[회원가입]</strong></h2>
 
            <ul>
                 <li> <strong>회원 ID</strong> 
@@ -18,35 +25,44 @@
                 <input type="text" placeholder="아이디" value=""/>
                 <input type="button" onclick="alert('사용가능한 아이디입니다')" value="중복확인"/></li> <hr />
                 <li> <strong>비밀번호</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" placeholder="비밀번호" value=""/></li><hr />
                 <li>  <strong>비밀번호 확인</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" placeholder="비밀번호" value=""/></li> <hr />
                 <li><strong>이 름</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" placeholder="" value=""/></li><hr />
                 <li> <strong>성별</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 남성<input type="radio" name="sex" value="1"/>
                 여성<input type="radio" name="sex" value="2"/>
                 해당없음<input type="radio" name="sex" value="3"/></li><hr />
-                <li><strong></strong></li>
+                <li><strong>이메일</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="" value=""/> &nbsp;@&nbsp;&nbsp;
+                   <select>
+                     <option>직접입력</option>
+                     <option>naver.com</option>
+                     <option>hanmail.net</option>
+                     <option>gmail.com</option>
+                     <option>nate.com</option>
+                  </select>
+                </li> <hr />
+                <li> <strong>사원개인코드</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" placeholder="확인코드" value=""/>
+                <input type="button" onclick="alert('확인 되셨습니다')" value="확인"/></li><hr />
+                &nbsp;&nbsp; <input type="checkbox" value="1" /> <strong>로봇이 아닙니다</strong> <hr />
             </ul>
-           
-          <select>
-               <option>직접입력</option>
-               <option>naver.com</option>
-               <option>hanmail.net</option>
-               <option>gmail.com</option>
-               <option>nate.com</option>
-          </select>
-           <!-- cols 열개수(글자수), row행 개수(줄수) -->
-          <textarea cols="20" rows="3" >
-              ?
-          </textarea>
-
-          <!-- button 버튼 -->
-          <button>버튼이름</button>
-          <input type="button" value="버튼이름" />
-          <input type="button" onclick="alert('테스트 완료')" value="테스트 버튼"/>
+           <br />
+           <br />
+           <br />
+           <br />
+           <div style = "text-align : center;">
+             <input type="submit" onclick="alert('회원가입이 신청되셨습니다.  귀하의 입사를 축하합니다')" value="회원가입"/>
+           </div>
 
         </form>
-    </body>
+     </body>
 </html>
