@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Page Title</title>
+   </head>
+  <style>
+        body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul{
+            margin:0;
+            padding:0;
+        }
+        body,button,input,select,table,textarea{
+            font-size: 12px;
+            font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+        }
+        button,input{
+            border-radius: 0;
+        }
+        fieldset,img{
+            border: 0;
+        }
+        ol,ul{
+            list-style: none;
+        }
+        address,em{
+            font-style: normal;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+
+        #header{
+            background: #eee;
+            height: 100px;
+            /* 이와같이 가운데 정렬 구분 가능 */
+            width: 1000px;
+            margin:0 auto 20px 0;
+        }
+        #nav{
+            height: 50px;
+            background: rgb(241, 224, 224);
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #footer{
+            height: 100px;
+            background: #eee;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #content{
+            background: #eee;
+            /* margin-top: 20px;
+            margin-bottom: 20px; */
+            width: 1000px;
+            margin: 20px auto 20px auto;
+            height: 600px;
+        }
+        /*#body{
+            width: 1000px;
+            margin: 0 auto;
+        }*/
+        .section_main{
+            width: 700px;
+            background: #ff0;
+            float: left;
+        }
+        .aside{
+            width: 300px;
+            background: #f00;
+            float: left;
+            height: 600px;
+        }
+        .section{
+            background: #f0f;
+            height: 300px;
+        }
+        .article{
+            background: green;
+            height: 300px;
+        }
+        .clearfix {
+            overflow: auto;
+        }
+        .clearfix::after{
+            clear: both;
+            display: block;
+            content: "";
+        }
+    </style>
+  <body>
+
+   <!-- <div id="body"></div> -->
+   <div id="header">
+        header
+    </div> 
+    <div id="nav">
+        nav
+    </div>
+    <div id="content" class="clearfix">
+        <div class="section_main">
+            <div class="section">section</div>
+            <div class="article">article</div>
+        </div>
+        
+        <div class="aside">aside</div>
+    </div>
+
+    <div id="footer">footer</div>
+
+
+    <h1>Heading1</h1>
+     <p>paragraph</p>
+     <span>span</span>
+     <strong>strong</strong>
+     <ul>
+         <li>un-ordered list</li>
+     </ul>
+     <ol>
+         <li>ordered list</li>
+     </ol>
+
+</body>
+</html>

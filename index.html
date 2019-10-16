@@ -1,19 +1,147 @@
 <!DOCTYPE html>
 <html>
-  <head>
-     <title>콘텐츠 프로그래밍 사이트</title>
-     <meta charset="utf-8"  />
-     <!-- utf-8, euc-kr -->
-     <meta name="author" content="조민경" />
-     <meta name="keywords" content="계원, 콘텐츠 프로그래밍, 디지털미디어디자인" />
-  </head>
-  <body>
-      
-     <a href="training.html" target= "_blank" >HTML연습</a>
-     <a href="html_part1.html" target= "_blank">part.1 불한당</a>
-     <a href="https://www.naver.com" target= "_blank">네이버 가기</a>
-     <a href="html5.html" target="_blank">html5</a>
-     <a href="form.html" target="_blank">회원가입</a>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="./assets/css/reset.css" />
+<link rel="stylesheet" href="./assets/css/layout.css" />
+<link rel="stylesheet" href="./assets/css/common.css" />
+<link rel="stylesheet" href="./assets/css/navigation.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="./assets/css/accordion.css" />
+<link rel="stylesheet" href="./assets/css/swiper.min.css" />
+<link rel="stylesheet" href="./assets/css/index.css" />
 
-    </body>
+</head>
+
+<body>
+	<!-- header -->
+	<div id="header">
+		<div class="header_inner">
+			header
+		</div>
+	</div>
+	<!-- // header -->
+
+	<!-- navigation -->
+	<div id="nav">
+		<div class="nav_inner">
+			<ul class="navigation clearfix">
+				<li class="navigation_list">
+					<a href="" class="navigation_link">메뉴1</a>
+					<div class="sub_menu">
+						sub_menu1
+					</div>
+				</li>
+				<li class="navigation_list"><a href="" class="navigation_link">메뉴2</a></li>
+				<li class="navigation_list"><a href="" class="navigation_link">메뉴3</a></li>
+				<li class="navigation_list"><a href="" class="navigation_link">메뉴4</a></li>
+				<li class="navigation_list"><a href="" class="navigation_link">메뉴5</a></li>
+				<li class="navigation_list">
+					<a href="" class="navigation_link">메뉴6</a>
+					<div class="sub_menu">
+						sub_menu6
+					</div>
+				</li>
+				<li class="navigation_list"><a href="" class="navigation_link">메뉴7</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- // navigation -->
+
+	<!-- contents -->
+	<div id="content" class="clearfix">
+		<div class="aside">
+			<!-- 아코디언 -->
+			<dl class="accordion">
+				<dt class="accordion-title isOpen">title1</dt>
+				<dd class="accordion-desc">desc1</dd>
+				<dt class="accordion-title">title2</dt>
+				<dd class="accordion-desc">desc2</dd>
+				<dt class="accordion-title">title3</dt>
+				<dd class="accordion-desc">desc3</dd>
+			</dl>
+			<!-- // 아코디언 -->
+		</div>
+		<div class="section_main">
+			<div class="section">
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">Slide 1</div>
+						<div class="swiper-slide">Slide 2</div>
+						<div class="swiper-slide">Slide 3</div>
+						<div class="swiper-slide">Slide 4</div>
+					</div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				<!-- // Swiper -->
+			</div>	
+			<div class="article">
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">Slide 1</div>
+						<div class="swiper-slide">Slide 2</div>
+						<div class="swiper-slide">Slide 3</div>
+						<div class="swiper-slide">Slide 4</div>
+					</div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!-- // Swiper -->
+			</div>	
+		</div>
+	</div>
+	<!-- // contents -->
+	
+	<!-- footer -->
+	<div id="footer">
+		<div class="footer_inner">
+			footer
+		</div>
+	</div>
+	<!-- // footer -->
+	
+	<script src="./assets/js/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="./assets/js/swiper.min.js"></script>
+	<script>
+
+  	var accordionTitle = $('.accordion-title');
+  	accordionTitle.bind('click', function () {
+  		var _self = $(this);
+
+  		if(!_self.hasClass('isOpen')){
+  			accordionTitle.removeClass('isOpen');
+	  		$(this).addClass('isOpen');
+
+	  		accordionTitle.next().slideUp();
+	  		$(this).next().slideDown();
+  		}
+  	});
+
+
+	new Swiper('.section .swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+
+    new Swiper('.article .swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      }
+    });
+  
+  </script>
+</body>
 </html>

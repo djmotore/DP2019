@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.section .swiper-container{
+	height: 100%;
+}
+
+.article .swiper-container{
+	height: 100%;	
+}
