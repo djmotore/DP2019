@@ -39,10 +39,26 @@
             margin:0 auto 20px 0;
         }
         #nav{
-            height: 50px;
-            background: rgb(241, 224, 224);
-            width: 1000px;
-            margin: 0 auto;
+			background-color: black;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		     }
+		li { float: left; }
+		li a {
+			display: block;
+			background-color: #101616;
+			color: #ffffff;
+			padding: 8px;
+			text-decoration: none;
+			text-align: center;
+			font-weight: bold;
+		}
+		li a:hover {
+			background-color: #bbd7da;
+			color: #101616;
+		}
         }
         #footer{
             height: 100px;
@@ -97,7 +113,14 @@
         header
     </div> 
     <div id="nav">
-        nav
+      <ul>
+         <li><a href="/index.php">Home</a></li>
+         <li><a href="/html/intro">HTML</a></li>
+         <li><a href="/css/intro">CSS</a></li>
+         <li><a href="/bbs/login.php">로그인</a></li>
+         <li><a href="/bbs/register_form.php">회원가입</a></li>
+      </ul>
+            
     </div>
     <div id="content" class="clearfix">
         <div class="section_main">
